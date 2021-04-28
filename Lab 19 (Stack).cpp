@@ -3,21 +3,21 @@
 void main() {
 	system("chcp 1251");
 	int size  = -1;
-	cout << "\nÂâåäèòå ðàçìåð ñòåêà:\n> ";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÑÑ‚ÐµÐºÐ°:\n> ";
 	while (size < 0) {
 		cin >> size;
 		if (size < 0) {
-			cout << "\nÂâåäèòå ïîëîæèòåëüíîå ÷èñëî:\n> ";
+			cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð¾Ð»Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾:\n> ";
 		}
 	}
 	if (size == 0) {
-		cout << "\nÑòåê ïóñò!\n";
+		cout << "\nÐ¡Ñ‚ÐµÐº Ð¿ÑƒÑÑ‚!\n";
 	}
 	else {
 		Stack* stack = new Stack;
 		double el;
 		for (int i = 0; i < size; i++) {
-			cout << "\nÂâåäèòå " << i + 1 << " ýëåìåíò:\n> ";
+			cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i + 1 << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚:\n> ";
 			cin >> el;
 			stack->Push(el);
 		}
