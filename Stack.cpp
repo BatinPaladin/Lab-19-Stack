@@ -29,7 +29,7 @@ int Stack::Size() {
 	return size;
 }
 void Stack::Show(){
-	cout << "\nÑòåê:\n";
+	cout << "\nÐ¡Ñ‚ÐµÐº:\n";
 	Node* temp = top;
 	while (temp != nullptr) {
 		cout << temp->data << " ";
